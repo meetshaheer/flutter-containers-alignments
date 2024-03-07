@@ -9,52 +9,19 @@ class constainers_alignmet extends StatelessWidget {
       appBar: AppBar(
         title: Text("Containers Alignments"),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          // For Columns
-          // Main Axis Alignmet works top to bottom
-          // Cross Axis Alignment works left to right
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.amber[200],
-                  child: Text("Container"),
-                ),
-                Container(
-                  width: 100,
-                  height: 100,
-                  color: Colors.amber[700],
-                  child: Text("Container"),
-                ),
-              ],
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[300],
-              child: Text("Container"),
-            ),
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
+      body: Container(
+        // Container width with columns
+        width: 300,
+        color: Colors.deepOrange[300],
+        child: SingleChildScrollView(
+          child: Column(
+            // For Columns
+            // Main Axis Alignmet works top to bottom
+            // Cross Axis Alignment works left to right
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Row(
                 children: [
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.amber[400],
-                    child: Text("Container"),
-                  ),
-                  Container(
-                    width: 100,
-                    height: 100,
-                    color: Colors.amber[300],
-                    child: Text("Container"),
-                  ),
                   Container(
                     width: 100,
                     height: 100,
@@ -64,55 +31,93 @@ class constainers_alignmet extends StatelessWidget {
                   Container(
                     width: 100,
                     height: 100,
-                    color: Colors.amber[100],
+                    color: Colors.amber[700],
                     child: Text("Container"),
                   ),
                 ],
               ),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[500],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[900],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[200],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[300],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[400],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[500],
-              child: Text("Container"),
-            ),
-            Container(
-              width: 100,
-              height: 100,
-              color: Colors.amber[900],
-              child: Text("Container"),
-            ),
-          ],
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[300],
+                child: Text("Container"),
+              ),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: [
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber[400],
+                      child: Text("Container"),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber[300],
+                      child: Text("Container"),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber[200],
+                      child: Text("Container"),
+                    ),
+                    Container(
+                      width: 100,
+                      height: 100,
+                      color: Colors.amber[100],
+                      child: Text("Container"),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[500],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[900],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[200],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[300],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[400],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[500],
+                child: Text("Container"),
+              ),
+              Container(
+                width: 100,
+                height: 100,
+                color: Colors.amber[900],
+                child: Text("Container"),
+              ),
+            ],
+          ),
         ),
       ),
     );
