@@ -11,6 +11,10 @@ class constainers_alignmet extends StatelessWidget {
       ),
       body: SingleChildScrollView(
         child: Column(
+          // For Columns
+          // Main Axis Alignmet works top to bottom
+          // Cross Axis Alignment works left to right
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Row(
               children: [
@@ -37,6 +41,7 @@ class constainers_alignmet extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Container(
                     width: 100,
