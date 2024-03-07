@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 
 class constainers_alignmet extends StatelessWidget {
@@ -13,14 +11,15 @@ class constainers_alignmet extends StatelessWidget {
       ),
       body: Container(
         // Container width with columns
-        width: 300,
-        color: Colors.deepOrange[300],
+        height: 700,
+        color: Colors.deepOrange[100],
         child: SingleChildScrollView(
           child: Column(
             // For Columns
             // Main Axis Alignmet works top to bottom
             // Cross Axis Alignment works left to right
-            crossAxisAlignment: CrossAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Row(
                 children: [
@@ -95,30 +94,6 @@ class constainers_alignmet extends StatelessWidget {
                 width: 100,
                 height: 100,
                 color: Colors.amber[200],
-                child: Text("Container"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.amber[300],
-                child: Text("Container"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.amber[400],
-                child: Text("Container"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.amber[500],
-                child: Text("Container"),
-              ),
-              Container(
-                width: 100,
-                height: 100,
-                color: Colors.amber[900],
                 child: Text("Container"),
               ),
             ],
