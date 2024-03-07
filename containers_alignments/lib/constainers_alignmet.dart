@@ -1,3 +1,5 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 
 class constainers_alignmet extends StatelessWidget {
@@ -27,6 +29,9 @@ class constainers_alignmet extends StatelessWidget {
                     height: 100,
                     color: Colors.amber[200],
                     child: Text("Container"),
+                  ),
+                  SizedBox(
+                    width: 30,
                   ),
                   Container(
                     width: 100,
